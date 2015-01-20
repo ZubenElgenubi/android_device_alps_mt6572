@@ -30,3 +30,9 @@ TARGET_PREBUILT_KERNEL := device/alps/mt6572/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
+
+#recovery fstab
+TARGET_RECOVERY_FSTAB = device/alps/mt6572/recovery.fstab
+
+#custom boot img
+BOARD_CUSTOM_MKBOOTIMG := mkmtkbootimg
