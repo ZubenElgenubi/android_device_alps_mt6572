@@ -22,3 +22,33 @@ $(call inherit-product, build/target/product/full.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_mt6572
 PRODUCT_DEVICE := mt6572
+
+
+
+##############NEcesary files
+
+PRODUCT_PACKAGES += \
+    mkmtkbootimg
+	
+include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
+
+PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
+PRODUCT_PACKAGES := \
+    audio_policy.default \
+    audio.primary.default \
+    camera.default \
+    gps.default \
+    gralloc.default \
+    keystore.default \
+    libaudio.r_submix.default \
+    libaudio.usb.default \
+    lights.default \
+    local_time.default \
+    power.default \
+    sensors.default \
+    librs_jni \
+    com.android.future.usb.accessory
+
+WIFI_BAND := 802_11_BG
