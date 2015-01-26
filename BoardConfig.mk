@@ -5,7 +5,8 @@ USE_CAMERA_STUB := true
 -include device/alps/mt6572/BoardConfigCommon.mk
 
 #recovery fstab
-TARGET_RECOVERY_FSTAB = device/alps/mt6572/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/alps/mt6572/recovery.fstab
 
 #custom boot img
 BOARD_CUSTOM_MKBOOTIMG := mkmtkbootimg
+
